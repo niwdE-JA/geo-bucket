@@ -1,13 +1,17 @@
 from flask import Flask, request, jsonify
 from flask_migrate import Migrate
 import googlemaps
-from models import db, Property, GeoBucket
+from src.models import db, Property, GeoBucket
 from geoalchemy2.shape import from_shape
 from shapely.geometry import Point
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # extract env variables from environment
-DATABASE_URL = os.getenv('DATABASE_URL')
+DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///fallback.db')
 GOOGLE_MAPS_API_KEY = os.getenv('GOOGLE_MAPS_API_KEY')
 
 app = Flask(__name__)
