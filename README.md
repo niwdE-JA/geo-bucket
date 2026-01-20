@@ -99,11 +99,11 @@ You can manually test the normalization by running these requests in order:
 ```bash
 curl -X POST http://localhost:5000/api/properties \
 -H "Content-Type: application/json" \
--d '{"title": "House 1", "location_name": "Sangotedo", "lat": 6.4698, "lng": 3.6285}'
+-d '{"title": "House 1", "location": "Sangotedo", "lat": 6.4698, "lng": 3.6285}'
 
 curl -X POST http://localhost:5000/api/properties \
 -H "Content-Type: application/json" \
--d '{"title": "House 2", "location_name": "Sangotedo, Ajah", "lat": 6.4720, "lng": 3.6301}'
+-d '{"title": "House 2", "location": "Sangotedo, Ajah", "lat": 6.4720, "lng": 3.6301}'
 
 ```
 
