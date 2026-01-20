@@ -139,13 +139,10 @@ pytest tests/
 
 Key Endpoints 
 
-* 
-`POST /api/properties`: Accepts property details and auto-assigns a geo-bucket.
+* `POST /api/properties`: Accepts property details and auto-assigns a geo-bucket.
 
 
-* 
-`GET /api/properties/search?location=`: Performs a bucket-based lookup for properties.
+* `GET /api/properties/search?location=`: Performs a bucket-based lookup for properties.
 
 
-* 
-`GET /api/geo-buckets/stats`: Returns system-wide bucket coverage and property counts.
+* `GET /api/geo-buckets/stats`: Returns system-wide bucket coverage and property counts.
