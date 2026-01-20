@@ -15,4 +15,5 @@ for item in test_data:
 
 # The verification search
 response = requests.get(f"{API_BASE_URL}/api/properties/search?location=sangotedo")
+print("Search Response:", response.json())
 print(f"Properties found: {len(response.json())}") # Should be 3
