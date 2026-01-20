@@ -17,23 +17,18 @@ Create a `.env` file in the root directory and add the following:
 
 ```env
 FLASK_APP=src/app.py
-DATABASE_URL=postgresql://postgres:postgres@localhost:5432/expertlisting
+DATABASE_URL=postgresql://username:password@localhost:5432/database_name
 GOOGLE_MAPS_API_KEY=your_api_key_here
-
+API_BASE_URL=http://localhost:5000
 ```
 
 ## 2. Database Setup (PostGIS)
 
-The project requires **PostgreSQL with the PostGIS extension**. The easiest way to run this is via Docker:
-
+The project requires **PostgreSQL with the PostGIS extension**. This can be set up locally, as I've done, but any cloud service provider would suffice.
+The PostGIS extension must be enabled in the database as follows.
 ```bash
-# Pull and run the PostGIS image
-docker run --name expertlisting-db \
-  -e POSTGRES_PASSWORD=postgres \
-  -e POSTGRES_DB=expertlisting \
-  -p 5432:5432 \
-  -d postgis/postgis
-
+psql postgresql://username:password@localhost:5432/database_name
+CREATE EXTENSION postgis;
 ```
 
 ## 3. Installation
