@@ -55,7 +55,10 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 
 3. **Install dependencies:**
+Install these three separately for now (due to compatibility issues I noticed)
 ```bash
+pip install psycopg2-binary
+pip install Shapely
 pip install -r requirements.txt
 
 ```

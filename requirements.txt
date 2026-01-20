@@ -1,0 +1,19 @@
+# Web Framework
+Flask==3.0.0
+
+# Database & ORM
+Flask-SQLAlchemy==3.1.1
+# psycopg2-binary==2.9.9
+GeoAlchemy2==0.14.1
+Flask-Migrate==4.0.5
+
+# Spatial Data Handling
+# Shapely==2.0.2
+
+# External APIs
+googlemaps==4.10.0
+
+# Utilities & Testing
+requests==2.31.0
+pytest==7.4.3
+python-dotenv==1.0.0
