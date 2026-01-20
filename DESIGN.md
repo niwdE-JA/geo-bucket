@@ -100,7 +100,7 @@ The system handles normalization through a two-step process:
 [ PostgreSQL Query ] ---> SELECT * FROM properties WHERE bucket_id = 'ChIJuT...'
           |
           v
-[cite_start][ Response: 47 Properties ] [cite: 6, 30]
+[ Response: 47 Properties ]
 
 ```
 
