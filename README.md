@@ -4,11 +4,8 @@ This system implements a location normalization engine using "Geo-Buckets" to gr
 
 ## Prerequisites
 
-* **Python 3.9+**
-* 
-**Docker & Docker Compose** (Recommended for PostGIS setup) 
-
-
+* **Python 3.x+**
+* **Postgresql 17+, with GIS installed** (Recommended for PostGIS setup) 
 * **Google Maps API Key** (with Geocoding API enabled)
 
 ## 1. Environment Configuration
