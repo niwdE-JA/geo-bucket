@@ -92,8 +92,7 @@ python src/seed.py
 
 You can manually test the normalization by running these requests in order:
 
-1. 
-**Create Properties** (Different names/coordinates):
+1. **Create Properties** (Different names/coordinates):
 
 
 ```bash
@@ -108,8 +107,7 @@ curl -X POST http://localhost:5000/api/properties \
 ```
 
 
-2. 
-**Search Properties** (Should return all results from the same bucket):
+2. **Search Properties** (Should return all results from the same bucket):
 
 
 ```bash
@@ -118,8 +116,7 @@ curl "http://localhost:5000/api/properties/search?location=sangotedo"
 ```
 
 
-3. 
-**Check Bucket Stats**:
+3. **Check Bucket Stats**:
 
 
 ```bash
